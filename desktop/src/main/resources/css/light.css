@@ -1,0 +1,139 @@
+/* Start of LOGIN CSS*/
+
+.jFXTextField{
+    -fx-prompt-text-fill: #D9D9D9;
+}
+/* End of LOGIN CSS*/
+
+
+
+/* Start of PIN Validation */
+.jFXTextField{
+    -jfx-unfocus-height: 5px;
+}
+.jFXPin .input-line{
+    -fx-pref-height:2px;
+}
+/* End of PIN Validation CSS*/
+
+
+
+/* Start of Performance Graph */
+
+.quarterly-btn{
+
+    -fx-border-radius: 4 0 0 4;
+}
+.annual-btn{
+    -fx-border-radius: 0 4 4 0;
+}
+
+.performanceChart .default-color0.chart-bar{
+    -fx-bar-fill: #063f77;
+}
+.performanceChart .default-color1.chart-bar{
+    -fx-bar-fill: #fbb631;
+}
+.Tick-label{
+    -fx-text-alignment: center;
+}
+.chart-plot-background{
+    -fx-background-color: #ffffff;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-plot-background {
+    -fx-border-color: #FFFFFF;
+}
+
+.axis:top {
+    -fx-border-color: transparent;
+}
+
+.axis:right {
+    -fx-border-color: transparent;
+}
+
+.axis:bottom {
+    -fx-border-width: 2px;
+}
+
+.axis:left {
+    -fx-border-color: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-border-color: #EDEDED;
+    -fx-stroke-width: 1px;
+    -fx-stroke-type: centered;
+    -fx-stroke-dash-array: 100%;
+}
+/* And of Performance Graph */
+
+/* Start of Custom Date Range */
+ .date-picker .month-year-pane{
+    visibility: hidden;
+     -fx-skin: popupContent;
+}
+ .custom-date-picker .date-now{
+
+ }
+/* End of Custom Date Range */
+
+/* Start of Message Tray */
+.list-view{
+    -fx-background-color: #b3b3b3;
+}
+.list-cell:empty{
+    -fx-background-color:transparent;
+}
+.list-cell:odd:even{
+    -fx-background-color:  #b3b3b3;
+    -fx-padding: 1em 0em 1em 0em;
+}
+.list-cell:filled:hover {
+    -fx-view-order: 0;
+    -fx-effect: dropshadow(one-pass-box, #656565, 12, 0.5, 0.0, 5);
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    /* 3:, 4: */
+    -fx-background-color:  #b3b3b3;
+
+}
+.list-cell:even {
+    -fx-background: -fx-control-inner-background-alt;
+}
+
+/* End of message Tray*/
+
+/*Start of MyStock Table CSS*/
+.table-view{
+    -fx-background-color: #ffffff;
+}
+.table-view:empty{
+    -fx-background-color: transparent;
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #d6e7f6;
+}
+.table-view .table-cell{
+    -fx-table-cell-border-color:transparent;
+}
+.table-view .table-cell:even:odd{
+    -fx-background: -fx-control-inner-background-alt;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color: #d6e7f6;
+    -fx-text-fill: #000000;
+    -fx-table-cell-border-color:transparent;
+}
+/* End of MyStock Table CSS */

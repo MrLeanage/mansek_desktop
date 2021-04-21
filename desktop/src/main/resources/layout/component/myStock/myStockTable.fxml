@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="993.0" stylesheets="@../../../css/light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.component.myStock.MyStockView">
+   <children>
+      <TableView fx:id="stockTable" cacheShape="false" editable="true" layoutX="9.0" layoutY="10.0" prefHeight="347.0" prefWidth="971.0">
+         <columns>
+            <TableColumn fx:id="symbolColumn" editable="false" prefWidth="111.0" text="Symbol" />
+            <TableColumn fx:id="lotShareColumn" editable="false" prefWidth="97.0" text="Lot/Share&#10;" />
+            <TableColumn fx:id="availableColumn" editable="false" prefWidth="146.0" text="Available &#10;lot to Share" />
+            <TableColumn fx:id="priceColumn" editable="false" prefWidth="141.0" text="Last/Avg&#10; Price(Rp)" />
+            <TableColumn fx:id="gainLossColumn" editable="false" prefWidth="130.0" text="Gain /Loss&#10; (Rp%)" />
+            <TableColumn fx:id="marketColumn" editable="false" prefWidth="152.0" text="Market/Stock&#10; Value (Rp)" />
+            <TableColumn fx:id="cutValueColumn" editable="false" prefWidth="167.0" text="Haircut/&#10;HairCut Value" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="loaderAnchorPane" layoutX="9.0" layoutY="53.0" prefHeight="307.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label fx:id="loaderLabel" layoutX="435.0" layoutY="133.0" text="Webull" textFill="#e5e5e5">
+               <font>
+                  <Font name="Calibri Bold" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

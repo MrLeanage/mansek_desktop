@@ -1,0 +1,40 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.4.21'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'junit:junit:4.13.1'
+
+    //OK HTTP 3
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+    testImplementation "com.squareup.okhttp3:mockwebserver:4.9.0"
+
+    // Koin
+    implementation("org.koin:koin-core:2.2.2")
+
+    // Rx Libs
+    api("io.reactivex.rxjava3:rxjava:3.0.6")
+
+    // Retrofit2
+    api("com.squareup.retrofit2:retrofit:2.9.0")
+    api("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+    api("com.squareup.okhttp3:logging-interceptor:4.3.1")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
+
+    // Serialization & Misc
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
+
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.freeCompilerArgs = ['-Xuse-experimental=kotlinx.serialization.ImplicitReflectionSerializer,kotlinx.coroutines.ObsoleteCoroutinesApi']
+}

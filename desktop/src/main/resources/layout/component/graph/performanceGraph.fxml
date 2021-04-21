@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="174.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../css/light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.component.graph.PerformanceGraphView">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="89.0" text="Performance" textFill="#333333" AnchorPane.leftAnchor="8.29" AnchorPane.topAnchor="6.31">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#7795c1" height="25.0" layoutX="77.2699966430664" layoutY="32.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="annual-rectangle" visible="false" width="81.0" AnchorPane.rightAnchor="17.81" AnchorPane.topAnchor="32.0" />
+      <Rectangle arcHeight="5.0" fill="#063f77" height="10.51" layoutX="24.0" layoutY="79.0" stroke="#063f77" strokeType="INSIDE" width="10.36" AnchorPane.bottomAnchor="173.42999977111816" AnchorPane.leftAnchor="8.29" AnchorPane.rightAnchor="155.35000034332276" AnchorPane.topAnchor="63.06" />
+      <Rectangle arcHeight="5.0" fill="#fbb631" height="10.51" layoutX="110.0" layoutY="81.0" stroke="#fbb631" strokeType="INSIDE" width="10.36" AnchorPane.bottomAnchor="173.42999977111816" AnchorPane.leftAnchor="74.57" AnchorPane.rightAnchor="89.07000034332276" AnchorPane.topAnchor="63.06" />
+      <Label layoutX="35.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.61" prefWidth="43.5" text="Revenue" textFill="#9ea1a8" AnchorPane.bottomAnchor="171.99" AnchorPane.leftAnchor="21.75" AnchorPane.rightAnchor="108.25" AnchorPane.topAnchor="62.01">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.61" prefWidth="43.5" text="Earnings" textFill="#9ea1a8" AnchorPane.bottomAnchor="171.99" AnchorPane.leftAnchor="89.07" AnchorPane.rightAnchor="40.93000000000001" AnchorPane.topAnchor="62.01">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="performanceChart" alternativeRowFillVisible="false" barGap="1.0" layoutX="6.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="172.0" prefWidth="161.0" style="-fx-padding: 0px; -fx-background-color: #ffffff;" styleClass="performanceChart" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="73.0">
+        <xAxis>
+          <CategoryAxis animated="false" minHeight="-Infinity" minWidth="-Infinity" prefWidth="90.0" side="BOTTOM" tickLabelFill="#1f1f1f" tickLabelGap="6.64" tickLength="10.0" tickMarkVisible="false" visible="false" fx:id="xAxisChart">
+               <tickLabelFont>
+                  <Font name="Calibri" size="9.0" />
+               </tickLabelFont>
+               <padding>
+                  <Insets top="1.0" />
+               </padding>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxisChart" autoRanging="false" forceZeroInRange="false" lowerBound="100.0" minorTickLength="0.0" minorTickVisible="false" side="LEFT" tickLabelFill="#9ea1a8" tickLabelGap="5.0" tickMarkVisible="false" tickUnit="50.0" upperBound="600.0">
+               <tickLabelFont>
+                  <Font name="Calibri" size="9.0" />
+               </tickLabelFont>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </NumberAxis>
+        </yAxis>
+      </BarChart>
+      <JFXButton layoutX="43.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="74.57" style="-fx-border-color: #7795C1; -fx-background-color: #7795c1;" styleClass="quarterly-btn" text="QUARTERLY" textFill="WHITE" AnchorPane.leftAnchor="7.25" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="1.0" top="1.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton layoutX="60.0" layoutY="93.0" prefHeight="24.0" prefWidth="74.57" style="-fx-border-color: #7795C1;" styleClass="annual-btn" text="ANNUALLY" textFill="#7795c1" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="1.0" top="1.0" />
+         </padding>
+      </JFXButton>
+   </children>
+</AnchorPane>

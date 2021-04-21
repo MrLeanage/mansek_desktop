@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level: - %msg%n" />
+        </Console>
+        <GuiAppender name="GuiLogger"/>
+        <OurApplicationInsightsAppender name="applicationInsightsAppender"/>
+    </Appenders>
+</Configuration>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="245.0" prefWidth="416.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../css/light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.popup.ValidatePinPopupView">
+   <children>
+      <Label layoutX="63.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="176.0" text="Input Your Pin" textFill="#333333" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeStage" prefHeight="15.0" prefWidth="347.0" text="Pin is the code that use for trading transaction." textFill="#333333" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="82.0">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="82.0" text="Forgot your pin?" textFill="#063f77" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="193.0">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="firstTextField" alignment="CENTER" focusColor="#405aa800" layoutX="43.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="338.0" />
+      <JFXTextField fx:id="secondTextField" alignment="CENTER" focusColor="#405aa800" layoutX="102.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="281.0" AnchorPane.topAnchor="133.0" />
+      <JFXTextField fx:id="thirdTextField" alignment="CENTER" focusColor="#405aa800" layoutX="159.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="133.0" />
+      <JFXTextField fx:id="fourthTextField" alignment="CENTER" focusColor="#405aa800" layoutX="222.0" layoutY="147.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="133.0" />
+      <JFXTextField fx:id="fifthTextField" alignment="CENTER" focusColor="#405aa800" layoutX="274.0" layoutY="133.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="133.0" />
+      <JFXTextField fx:id="sixthTextField" alignment="CENTER" focusColor="#405aa800" layoutX="322.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="39.0" style="-fx-border-width: 2px;" styleClass="jFXPin" unFocusColor="#6b6b6b" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="332.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="133.0" />
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="362.0" layoutY="18.0" onMouseClicked="#closeStage" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="16.0">
+         <image>
+            <Image url="@../../images/icon_close_grey.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <VBox layoutX="23.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="347.0" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="106.0">
+         <children>
+            <Pane prefHeight="15.0" prefWidth="329.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="278.0" text="Your Pin Expired Time is 10 mins. You can configuare it in" textFill="#333333">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="42.0" text="Settings." textFill="#063f77">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

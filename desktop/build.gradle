@@ -1,0 +1,75 @@
+plugins {
+    id 'application'
+    id 'kotlin'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'org.beryx.jlink' version '2.16.2'
+    id 'de.fuerstenau.buildconfig' version '1.1.8'
+
+}
+application.mainClassName = "desktop/com.mandiri.most.desktop.MainAppKt"
+
+repositories {
+    mavenCentral()
+}
+
+def endpointFile = file('../core/endpoint.properties')
+Properties endpointProps = new Properties()
+endpointProps.load(new FileInputStream(endpointFile))
+
+def localFile = file('../desktop/local.properties')
+Properties localProps = new Properties()
+endpointProps.load(new FileInputStream(localFile))
+
+buildConfig {
+    appName = project.name       // sets value of NAME field
+    version = project.version // sets value of VERSION field,
+    clsName = 'DesktopConfig'      // sets the name of the BuildConfig class
+    packageName = 'com.mandiri.most.desktop'    // sets the package of the BuildConfig class,
+    charset = 'UTF-8'
+    buildConfigField 'String', 'BASE_URL', (endpointProps["DEVELOPMENT_MAIN_API"] as String).replace("\"", "")
+}
+
+def mainSrcDir = 'src/main/java'
+
+sourceSets.main {
+    java {
+        srcDirs += new File(mainSrcDir)
+        srcDirs += new File(buildDir, 'gen/buildconfig/src') //BuildConfig
+    }
+    resources {
+        srcDirs = ['src/main/resources']
+        exclude "**/*.java"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":core")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'org.apache.logging.log4j:log4j-core:2.11.1'
+    testImplementation "org.koin:koin-test:2.2.2"
+//     Koin
+    implementation("org.koin:koin-core:2.2.2")
+    // Testing
+    implementation 'com.jfoenix:jfoenix:9.0.10'
+}
+
+javafx {
+    version = 14
+    modules("javafx.controls", "javafx.fxml")
+}
+
+task fatJar(type: Jar) {
+    archiveClassifier = 'uber'
+    from sourceSets.main.output
+    dependsOn configurations.runtimeClasspath
+    manifest {
+        attributes 'Main-Class': 'com.mandiri.most.desktop.MainAppKt'
+    }
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
+}

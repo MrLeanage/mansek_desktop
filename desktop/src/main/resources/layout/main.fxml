@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minWidth="1296.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.login.LoginViewModel">
+    <children>
+        <BorderPane prefHeight="401.0" prefWidth="601.0" style="-fx-background-color: #F2F2F2#F2F2F2;">
+            <left>
+                <VBox minWidth="80.0" prefHeight="200.0" prefWidth="80.0" style="-fx-background-color: #063F77#063F77;" BorderPane.alignment="CENTER" />
+            </left>
+            <center>
+                <BorderPane minWidth="1286.0" prefHeight="200.0" prefWidth="1.2861286E7" BorderPane.alignment="CENTER">
+                    <left>
+                        <VBox minHeight="763.0" minWidth="100.0" prefHeight="763.0" prefWidth="270.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                            </BorderPane.margin>
+                            <children>
+                                <VBox minHeight="272.0" prefHeight="272.0" prefWidth="100.0" />
+                                <Accordion minWidth="270.0" prefWidth="270.0">
+                                    <panes>
+                                        <TitledPane fx:id="indices" animated="true" style="-fx-background-color: transparenttransparent;" text="untitled 1">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                        <JFXListView fx:id="lvTest" minHeight="200.0" minWidth="310.0" prefHeight="200.0" prefWidth="310.0" style="-fx-border-color: #ffffff; -fx-background-color: #ffffff;" />
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" text="untitled 2">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" text="untitled 3">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </TitledPane>
+                                    </panes>
+                                </Accordion>
+                            </children>
+                        </VBox>
+                    </left>
+                    <top>
+                        <HBox minHeight="52.0" minWidth="-Infinity" prefHeight="52.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+                    </top>
+                    <center>
+                        <BorderPane minWidth="325.0" prefHeight="200.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+                            <right>
+                                <VBox id="#mylistviewmylistview" minWidth="325.0" prefHeight="200.0" prefWidth="325325.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                                    <BorderPane.margin>
+                                        <Insets left="9.0" />
+                                    </BorderPane.margin>
+                                </VBox>
+                            </right>
+                            <BorderPane.margin>
+                                <Insets bottom="9.0" right="9.0" top="9.0" />
+                            </BorderPane.margin>
+                            <top>
+                                <HBox minWidth="53.0" prefHeight="100.0" prefWidth="53.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                                    <BorderPane.margin>
+                                        <Insets bottom="9.0" />
+                                    </BorderPane.margin>
+                                </HBox>
+                            </top>
+                            <left>
+                                <VBox minWidth="310.0" prefHeight="763.0" prefWidth="310.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="TOP_LEFT">
+                                    <BorderPane.margin>
+                                        <Insets right="9.0" />
+                                    </BorderPane.margin>
+                                    <children>
+                                        <JFXTabPane fx:id="tabPane" style="-fx-background-color: #ffffff;">
+                                            <tabs>
+                                                <Tab text="Stocks">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="Top Gainers">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="Top Losers">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                    </content>
+                                                </Tab>
+                                            </tabs>
+                                        </JFXTabPane>
+                                    </children>
+                                </VBox>
+                            </left>
+                        </BorderPane>
+                    </center>
+                    <right>
+                        <HBox minWidth="345.0" prefHeight="100.0" prefWidth="345.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+                    </right>
+                </BorderPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

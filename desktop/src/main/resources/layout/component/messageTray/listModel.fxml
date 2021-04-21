@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.component.messageTray.ListModelView">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="125.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="15.0">
+                     <children>
+                        <Circle fx:id="removeIcon" fill="#ff000000" layoutX="11.0" layoutY="12.0" radius="5.0" stroke="RED" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="110.0">
+               <children>
+                  <Label fx:id="titleLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="110.0" text="Message Head" textFill="#272b32">
+                     <font>
+                        <Font name="Calibri Bold" size="7.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="11.0" prefWidth="110.0" text="Message" textFill="#939eac">
+                     <font>
+                        <Font name="Calibri Bold" size="5.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="20.0">
+                     <children>
+                        <Line endX="2.0" layoutX="11.0" layoutY="9.0" startX="-7.5" stroke="#272b32" />
+                        <Line endX="2.0" layoutX="11.0" layoutY="12.0" startX="-7.5" stroke="#272b32" />
+                        <Line endX="2.0" layoutX="11.0" layoutY="15.0" startX="-7.5" stroke="#272b32" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#1f93ff00" height="13.0" layoutX="1.0" layoutY="5.0" onDragDetected="#getDrag" stroke="TRANSPARENT" strokeType="INSIDE" width="14.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

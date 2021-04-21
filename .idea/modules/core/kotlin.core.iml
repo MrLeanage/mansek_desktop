@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":core" external.linked.project.path="$MODULE_DIR$/../../../core" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="kotlin" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xuse-experimental=kotlinx.serialization.ImplicitReflectionSerializer,kotlinx.coroutines.ObsoleteCoroutinesApi" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../core/build/classes/kotlin/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava3/2.9.0/fab8dc7defa024056fcd244980d1ca99f86d55b7/adapter-rxjava3-2.9.0.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.0.6/a4c6b0553e470b138869eb6050eaac507a323fd4/rxjava-3.0.6.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/com.jakewharton.retrofit/retrofit2-kotlinx-serialization-converter/0.8.0/4fe25acf1b2f12f17d7187f7cfcf4ee730822d50/retrofit2-kotlinx-serialization-converter-0.8.0.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.9.0/d8fdfbd5da952141a665a403348b74538efc05ff/retrofit-2.9.0.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/4.3.1/35854299be4bee613b91c35902ca4b070a0944b3/logging-interceptor-4.3.1.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.0/8e17601d3bdc8cf57902c154de021931d2c27c1/okhttp-4.9.0.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.2.2/3940758ea6b413b50df823c2a9dc13f08e1f7cee/koin-core-2.2.2.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.8.0/49b64e09d81c0cc84b267edd0c2fd7df5a64c78c/okio-jvm-2.8.0.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.0.1/900f8d34f091c8a957eca49e0cf6bf7d7006482d/kotlinx-serialization-json-jvm-1.0.1.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.0.1/d0c5ab89372940ed3fb77952e79b9cd5d466d86/kotlinx-serialization-core-jvm-1.0.1.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.21/4a668382d7c38688d3490afde93b6a113ed46698/kotlin-stdlib-1.4.21.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.21/7f48a062aa4b53215998780f7c245a4276828e1d/kotlin-stdlib-common-1.4.21.jar;C:/Users/dulshan/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="core" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.4.21/7beb6a97e87d40bb577f12e6c13c325eef5c4d7b/kotlin-gradle-plugin-api-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.4.21/1247decba314790165b4fe94d09c45b09db6b07f/kotlin-script-runtime-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.4.21/eb47ff9717becf5bcd1bb7ef5cb92fc3c8aa97e1/kotlin-scripting-common-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.4.21/59ecfba69264d8b2fa7687e0f1fa41e4a82301d2/kotlin-scripting-jvm-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.21/7f48a062aa4b53215998780f7c245a4276828e1d/kotlin-stdlib-common-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.21/4a668382d7c38688d3490afde93b6a113ed46698/kotlin-stdlib-1.4.21.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.7/8e2eb78158638b33793d204ffef0b65c4a578e1c/kotlinx-coroutines-core-1.3.7.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+              <option value="$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../core/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/../../../core/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../core">
+      <sourceFolder url="file://$MODULE_DIR$/../../../core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../core/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../core/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../core/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:adapter-rxjava3:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex.rxjava3:rxjava:3.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:logging-interceptor:4.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:4.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.koin:koin-core:2.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio-jvm:2.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:mockwebserver:4.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+</module>

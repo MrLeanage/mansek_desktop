@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mandiri.most.desktop.view.SampleHomeView">
+   <children>
+      <Button layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onAction="#closeStage" prefHeight="31.0" prefWidth="130.0" text="Close" />
+      <Button layoutX="25.0" layoutY="122.0" mnemonicParsing="false" onAction="#loadValidationPIN" prefHeight="31.0" prefWidth="130.0" text="PIN" />
+      <Button layoutX="25.0" layoutY="174.0" mnemonicParsing="false" onAction="#loadPerformanceGraph" prefHeight="31.0" prefWidth="130.0" text="Graph" />
+      <Button layoutX="25.0" layoutY="74.0" mnemonicParsing="false" onAction="#loadLogin" prefHeight="31.0" prefWidth="130.0" text="Login" />
+      <Button layoutX="25.0" layoutY="224.0" mnemonicParsing="false" onAction="#loadCustomDateRange" prefHeight="31.0" prefWidth="130.0" text="Date Picker" />
+      <Button layoutX="25.0" layoutY="273.0" mnemonicParsing="false" onAction="#loadMessageTray" prefHeight="31.0" prefWidth="130.0" text="Message Tray" />
+      <Button layoutX="25.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadMyStock" prefHeight="31.0" prefWidth="130.0" text="My Stock" />
+   </children>
+</AnchorPane>
